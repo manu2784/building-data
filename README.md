@@ -1,1 +1,3 @@
 # building-data
+
+npm install
