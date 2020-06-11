@@ -1,0 +1,59 @@
+{
+  "floors": [
+    {
+      "name": "First Floor",
+      "maximum_occupancy": 20,
+      "current_occupancy": 5,
+      "rooms": [
+        {
+          "name": "East Room",
+          "maximum_occupancy": 10,
+          "current_occupancy": 3
+        },
+        {
+          "name": "West Room",
+          "maximum_occupancy": 10,
+          "current_occupancy": 2
+        }
+      ]
+    },
+    {
+      "name": "Second Floor",
+      "maximum_occupancy": 20,
+      "current_occupancy": 10,
+      "rooms": [
+        {
+          "name": "East Room",
+          "maximum_occupancy": 10,
+          "current_occupancy": 5
+        },
+        {
+          "name": "West Room",
+          "maximum_occupancy": 10,
+          "current_occupancy": 5
+        }
+      ]
+    },
+    {
+      "name": "Third Floor",
+      "maximum_occupancy": 20,
+      "current_occupancy": 6,
+      "rooms": [
+        {
+          "name": "East Room",
+          "maximum_occupancy": 10,
+          "current_occupancy": 3
+        },
+        {
+          "name": "West Room",
+          "maximum_occupancy": 10,
+          "current_occupancy": 3
+        }
+      ]
+    }
+  ],
+  "maximum_occupancy": 60,
+  "current_occupancy": 21,
+  "name": "Assessment Building",
+  "timestamp": "2020-06-07T13:00:00Z"
+}
