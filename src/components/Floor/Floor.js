@@ -13,7 +13,7 @@ function Floor(props) {
 
   const populatePeople = (n, cur_occ) => {
     let max_occupancy = [];
-   // distributes occupancy randomy across room just to simulate real data
+    // distributes occupancy randomly across room just to simulate real data
     const randomIndices = getRandomIndices(n, cur_occ);
     for (let i = 0; i < n; i++) {
       let occupiedClass = "";
@@ -21,7 +21,11 @@ function Floor(props) {
         occupiedClass = "occupied";
       }
       max_occupancy.push(
-        <div className="desk" key={"p" + i} title={`p ${i+1} ${occupiedClass?"occupied":""}`}>
+        <div
+          className="desk"
+          key={"p" + i}
+          title={`p ${i + 1} ${occupiedClass ? "occupied" : ""}`}
+        >
           <FontAwesomeIcon
             icon={faUser}
             className={`roomIcon ${occupiedClass}`}
@@ -33,38 +37,36 @@ function Floor(props) {
   };
 
   const changeFloor = (dir) => {
-    if (dir === 1 && floorNum < (props.floors.length-1)) {
-      setFloorNum(floorNum => floorNum+1);
+    if (dir === 1 && floorNum < props.floors.length - 1) {
+      setFloorNum((floorNum) => floorNum + 1);
     }
 
     if (dir === -1 && floorNum > 0) {
-        setFloorNum(floorNum => floorNum-1);
-      }
+      setFloorNum((floorNum) => floorNum - 1);
+    }
   };
-  // return floor title to be displayed at the top of the page
-  const getFloorNum = () => {
-    if (floorNum === 0) return "Ground Floor";
-    else return `Floor ${floorNum}`;
-  };
+// get a shorthand to floor data
   let floorData = props.floors[floorNum].rooms;
-  const bgColor =["c1","c2","c3"];
-  const fontColor =["fc1","fc2","fc3"];
+
+  // dynamic classes for changing colors with floor
+  const bgColor = ["c1", "c2", "c3"];
+  const fontColor = ["fc1", "fc2", "fc3"];
   return (
     <React.Fragment>
       <div className="container">
         <div className="floorTitle">
-          <h3>{getFloorNum()}</h3>
+          <h3>{props.floors[floorNum].name}</h3>
         </div>
         <div className="legend">
           <span>{floorData[0].name}</span>
           <span>{floorData[1].name}</span>
         </div>
         <div className="details">
-           <div className={`east ${fontColor[floorNum]}`}>
-           <FloorDetails floorData={floorData[0]} floorNum={floorNum}/>
-           </div>
+          <div className={`east ${fontColor[floorNum]}`}>
+            <FloorDetails floorData={floorData[0]} floorNum={floorNum} />
+          </div>
           <div className={`west ${fontColor[floorNum]}`}>
-          <FloorDetails floorData={floorData[1]} floorNum={floorNum}/>
+            <FloorDetails floorData={floorData[1]} floorNum={floorNum} />
           </div>
         </div>
         <div className="floor">

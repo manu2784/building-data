@@ -1,156 +1,158 @@
 .container {
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
 }
 .floor {
-    width:80%;
-    height: 300px;
-    margin:0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.room {
-    background-color: #f7f6f6;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 70%;
-    padding:10px 5px;
-    
-}
-.c1{
-    background-color:#ebf7eb;
-    background:#ebf7eb;
-    color: #6aa96a;
-}
-.c2 {
-    background-color: yellow;
-    background: #f3f3dd;
-    color: rgb(184, 184, 68);
-}
-.c3 {
-    background-color: #f5efe4;
-    background: #f5efe4;
-    color: #c89d4d;
-}
-.fc1 >span{
-    color: #6aa96a !important;
-}
-.fc2 >span{
-    color: rgb(184, 184, 68) !important;
-}
-.fc3 >span {
-    color: #c89d4d !important;
-}
-.desk {
-    display: inline-block;
-    flex: 0 0 20%;
-    text-align:center;
-}
-
-.roomIcon {
-    color:grey;
-}
-.occupied {
-    color:blue;
-}
-.roomIcon{
-    font-size: 1.3em;
-}
-.roomIcon:hover {
-font-size: 1.5em;
-transition: font-size 200ms;
-}
-.legend {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.floorTitle{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.floorTitle h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-}
-
-
-.divider {
-    height: 108%;
-    border:1px solid;
-}
-
-.controller{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin: 10px 0px;
-}
-.controller button {
-    margin: 5px 15px;
-    padding: 3px 8px;
-    appearance: none;
-    border-style: none;
-    background: transparent;
-    background-color: transparent;
-    font-size: 1.2em;
-    font-weight: 200;
-    padding: 10px 10px;
-    border-radius: 3px;
-    outline-style: none;
-}
-.controller button:hover {
-    background-color:#e0e0e0;
-}
-.buttonIcon {
-    font-size: 1.2em;
-    color:grey;
-    vertical-align: middle;
-    margin: 0 5px;
-    font-weight: 200;
-}
-.details{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 40px;
-}
-.east, .west {
-  width:40%;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-.east >span, .west >span {
- font-weight: 800;
+.room {
+  background-color: #f7f6f6;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70%;
+  padding: 10px 5px;
+}
+.c1 {
+  background-color: #ebf7eb;
+  background: #ebf7eb;
+  color: #6aa96a;
+}
+.c2 {
+  background-color: yellow;
+  background: #f3f3dd;
+  color: rgb(184, 184, 68);
+}
+.c3 {
+  background-color: #f5efe4;
+  background: #f5efe4;
+  color: #c89d4d;
+}
+.fc1 > span {
+  color: #6aa96a !important;
+}
+.fc2 > span {
+  color: rgb(184, 184, 68) !important;
+}
+.fc3 > span {
+  color: #c89d4d !important;
+}
+.desk {
+  display: inline-block;
+  flex: 0 0 30%;
+  text-align: center;
+}
+
+.roomIcon {
+  color: grey;
+  opacity:0.5;
+}
+.occupied {
+  color: blue;
+  opacity: 1 !important;
+}
+.roomIcon {
+  font-size: 1.3em;
+}
+.roomIcon:hover {
+  font-size: 1.5em;
+  transition: font-size 200ms;
+}
+.legend {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.floorTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.floorTitle h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.divider {
+  height: 108%;
+  border: 1px solid;
+}
+
+.controller {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+}
+.controller button {
+  margin: 5px 15px;
+  padding: 3px 8px;
+  appearance: none;
+  border-style: none;
+  background: transparent;
+  background-color: transparent;
+  font-size: 1.2em;
+  font-weight: 200;
+  padding: 10px 10px;
+  border-radius: 3px;
+  outline-style: none;
+}
+.controller button:hover {
+  background-color: #e0e0e0;
+}
+.buttonIcon {
+  font-size: 1.2em;
+  color: grey;
+  vertical-align: middle;
+  margin: 0 5px;
+  font-weight: 200;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.east,
+.west {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.east > span,
+.west > span {
+  font-weight: 800;
 }
 .detailsLabel {
-    font-size: 1 em;
-    color:grey;
-    margin-right: 9px;
-    font-weight: 400;
+  font-size: 1 em;
+  color: grey;
+  margin-right: 9px;
+  font-weight: 400;
 }
 
 .legend span {
-    font-size: 1.3em;
-    font-weight: 200;
+  font-size: 1.3em;
+  font-weight: 200;
 }

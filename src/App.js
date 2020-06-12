@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import data from "./data.json";
+import data from "./data.json";     // Loading source data from file
 import Building from "./components/Building/Building";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCalendarDay } from "@fortawesome/free-solid-svg-icons";
